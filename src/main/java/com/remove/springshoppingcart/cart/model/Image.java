@@ -1,4 +1,4 @@
-package com.remove.SpringJournet.cart.model;
+package com.remove.springshoppingcart.cart.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

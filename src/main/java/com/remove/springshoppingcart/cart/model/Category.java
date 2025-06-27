@@ -1,4 +1,4 @@
-package com.remove.SpringJournet.cart.model;
+package com.remove.springshoppingcart.cart.model;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,15 +11,19 @@ import java.util.List;
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
 @Entity
-
 public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
 
+
+    @JsonIgnore
     @OneToMany(mappedBy = "category")
     private List<Product> products;
+
+    public Category(String name) {
+        this.name = name;
+    }
 }

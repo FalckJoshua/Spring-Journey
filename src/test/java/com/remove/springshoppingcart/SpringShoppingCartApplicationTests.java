@@ -1,4 +1,4 @@
-package com.remove.SpringJournet;
+package com.remove.springshoppingcart;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
